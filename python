@@ -1,0 +1,295 @@
+letter = '''Dear <|NAME|>,
+  You are selected!
+  <|DATE|>'''
+
+print(letter.replace("<|NAME|>","vivek").replace("<|DATE|>", "11 november 2025"))
+
+
+
+
+name =  "mr.vivek  ravel"
+print(name.replace("  ", " "))
+
+
+
+
+l1 = [1,34,56,45,78,234,]
+l1.pop(3)
+print(l1)
+
+
+
+
+#list program
+fruits = []
+
+f1 = input("enter fruit name :")
+fruits.append(f1)
+
+f2 = input("enter fruit name :")
+fruits.append(f2)
+
+f3 = input("enter fruit name :")
+fruits.append(f3)
+
+f4 = input("enter fruit name :")
+fruits.append(f4)
+
+f5 = input("enter fruit name :")
+fruits.append(f5)
+
+f6 = input("enter fruit name :")
+fruits.append(f6)
+
+f7 = input("enter fruit name :")
+fruits.append(f7)
+
+
+print(fruits)
+
+
+
+
+
+marks = []
+
+f1 = int(input("enter marks name :"))
+marks.append(f1)
+
+f2 = int(input("enter marks name :"))
+marks.append(f2)
+
+f3 = int(input("enter marks name :"))
+marks.append(f3)
+
+f4 = int(input("enter marks name :"))
+marks.append(f4)
+
+f5 = int(input("enter marks name :"))
+marks.append(f5)
+
+f6 = int(input("enter marks name :"))
+marks.append(f6)
+
+marks.sort()
+
+print(marks)
+
+
+
+
+
+l1=[2,3,56,78]
+print(sum(l1))
+
+
+a=[1,34,5,5,5,5,5,5,8,9]
+
+n= a.count(5)
+
+print(n)
+
+
+
+
+
+#dictionary
+
+marks = {
+  "patel":40,
+  "rahul":50,
+  "vivek":75,
+  
+}
+
+print(marks.items())
+print(marks.keys())
+print(marks.values())
+
+marks.update({"vivek":50,"panchal":80})
+print(marks.get("panchal"))
+print(marks)
+
+
+
+
+#set
+
+s1 = {1,2,3,4,5,6,85,89,65}
+s2 = {45,85,75,41,23,63,96}
+
+s1.remove(5)
+print(s1.union(s2))
+print(s1.intersection(s2))
+print(len(s1))
+print(s2)
+
+
+
+
+#practise set
+
+words={
+  "chai" : "tea",
+  "kursi": "chair",
+  "billi": "cat"
+}
+
+word = input("enter the word you want a meaning of :")
+
+print(words[word])
+
+
+s = set()
+
+n = input("Enter the number:")
+s.add(int(n))
+
+n = input("Enter the number:")
+s.add(int(n))
+
+n = input("Enter the number:")
+s.add(int(n))
+
+n = input("Enter the number:")
+s.add(int(n))
+
+n = input("Enter the number:")
+s.add(int(n))
+
+n = input("Enter the number:")
+s.add(int(n))
+
+n = input("Enter the number:")
+s.add(int(n))
+
+print(s)
+
+
+
+
+d={}
+
+name = input("enter the name:")
+lang = input("enter the language:")
+d.update({name:lang})
+
+name = input("enter the name:")
+lang = input("enter the language:")
+d.update({name:lang})
+
+name = input("enter the name:")
+lang = input("enter the language:")
+d.update({name:lang})
+
+name = input("enter the name:")
+lang = input("enter the language:")
+d.update({name:lang})
+
+print(d)
+
+
+
+
+
+
+a=int(input("enter your age:"))
+
+if(a>18):
+  print("you are able to drive")
+
+elif(a==18):
+  print("you can drive after 12months")
+
+def foods():
+    icecream = "Vanilla"    #global variable
+    vegetable = "Potato"    #local variable
+    fruit = "Lichi"         #local variable
+    print(vegetable + " is a local variable value.")
+    print(icecream + " is a global variable value.")
+    print(fruit + " is a local variable value.")
+
+foods()
+
+
+
+
+
+info = {'name':'Karan', 'age':19, 'eligible':True}
+print(info.values())
+
+
+def goodday(name):
+  print(input("enter your name:"), "good day")
+
+goodday("name")  
+
+
+
+
+def greet(name):
+  gr = "hello"+ name 
+  return gr 
+a = greet("vivek")
+print(a)
+
+
+
+def factorial(n):
+  if(n==0 or n==1):
+    return 1
+  return n * factorial(n-1)
+
+n = int(input("enter the number:"))
+print(factorial(n))
+
+
+
+def gretest(a,b,c):
+  if(a>b and a>c):
+    return a
+
+  elif(b>a and b>c):
+    return b
+
+  elif(c>a and c>b):
+    return c
+
+
+
+a = 15
+b = 24
+c = 3
+
+print(gretest(a,b,c))
+
+
+
+
+def pattern(n):
+  if (n==0):
+    return
+  print("*" *n)
+  pattern(n-1)
+pattern(5)
+
+
+
+
+def inch_to_cm(inch):
+  return inch*2.54
+
+n = int(input("enter the value in inch: "))
+
+print(f"the value in cm is {inch_to_cm(n)}")
+
+
+
+
+def multiply(n):
+  for i in range(1,11):
+     print(f"{n} x {i} = {n*i}")
+    
+multiply(5)
+
+
